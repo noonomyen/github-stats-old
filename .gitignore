@@ -2,5 +2,4 @@ src/venv
 src/__pycache__
 src/tmp
 src/config.test.json
-src/linguist
 README.md.backup
