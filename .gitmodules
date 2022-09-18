@@ -1,0 +1,4 @@
+[submodule "src/linguist"]
+	path = src/linguist
+	url = https://github.com/github/linguist
+	branch = v7.23.0

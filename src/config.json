@@ -1,0 +1,14 @@
+{
+    "delay": 3600,
+    "user": "<target-name>",
+    "stats": "github-stats/stats.json",
+    "svg": {
+        "light": "github-stats/light.svg",
+        "dark": "github-stats/dark.svg"
+    },
+    "auth": {
+        "token": "<github-personal-access-token>",
+        "name": "<user.name>",
+        "email": "<user.email>"
+    }
+}
