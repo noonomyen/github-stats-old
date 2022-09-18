@@ -12,12 +12,14 @@ def get(repo_name, GIT, lang, lang_stats, uid, sha_commits):
             lang_stats[l] = {
                 "size": 0,
                 "full_size": 0,
+                "percent": 0,
                 "color": lang[l]["color"]
             }
         for file in gl[l]["files"]:
             _ = GIT.get_size_by_author(file, uid, sha_commits)
             lang_stats[l]["size"] += _[0]
             lang_stats[l]["full_size"] += _[1]
+        lang_stats[l]["percent"] = (lang_stats[l]["size"] / lang_stats[l]["full_size"]) * 100
     chdir(wd)
 
     return lang_stats

@@ -50,7 +50,7 @@ class init:
         size = 0
         file_size = 0
         for line in output:
-            state = 0
+            counting = False
             line = line.split(" ")
             if line[0][0] == "^":
                 sha = line[0][1:]
@@ -63,13 +63,13 @@ class init:
                     is_author = True
                     break
             for _ in line:
-                if state == 1:
-                    len_ = len(_)
+                if counting:
+                    len_ = len(_) + 1
                     file_size += len_
                     if is_author:
                         size += len_
-                elif state == 0 and len(_) != 0 and _[-1] == ")":
-                    state = 1
+                elif counting == False and len(_) != 0 and _[-1] == ")":
+                    counting = True
         return size, file_size
 
     def get_repos_by_list(self, repos_list):

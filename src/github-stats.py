@@ -55,7 +55,6 @@ if __name__ == "__main__":
             if API.is_newcommits(r):
                 update.append(r)
         print(f"update : {update}")
-        print("save last commits history")
         lang_stats = lang_counter.load_fls()
         for r in update:
             print(f"pulling : {GIT.user}/{r}")
@@ -100,12 +99,14 @@ if __name__ == "__main__":
                     "closed": API.prs["closed"]
                 }
             }
+            print(f"push stats.json to {API.user}/{API.user} /{config['stats']}")
             stats.save(tmp)
+            shutil.copyfile("tmp/stats", f"tmp/repos/{API.user}/{config['stats']}")
             GIT.push()
         else:
             print("no update !")
-        shutil.copyfile("tmp/stats", f"tmp/repos/{API.user}/{config['stats']}")
         lang_counter.save_fls(lang_stats)
+        print("save last commits history")
         API.save_flc()
         print(f"sleeping : {config['delay']}sec")
 

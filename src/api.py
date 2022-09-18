@@ -64,19 +64,27 @@ class init:
         else:
             self.request_fail = True
 
-    def get_lastcommit(self):
+    def get_lastcommit(self, page=2):
         self.last_commits = {}
-        self.commits_json = {} 
+        self.commits_json = {}
         tmp = []
         for name in self.repos_list:
-            res = get(f"https://api.github.com/repos/{self.user}/{name}/commits", headers=self.headers)
-            if res.status_code == 200:
-                self.request_fail = False
-                self.commits_json[name] = res.json()
-                self.last_commits[name] = self.commits_json[name][0]["sha"]
-                tmp.append(name)
-            else:
-                self.request_fail = True
+            for i in range(page):
+                res = get(f"https://api.github.com/repos/{self.user}/{name}/commits", headers=self.headers)
+                if res.status_code == 200:
+                    self.request_fail = False
+                    res_json = res.json()
+                    if len(res_json) != 0:
+                        if i > 0:
+                            self.commits_json[name] += res_json
+                        else:
+                            self.commits_json[name] = res_json
+                            self.last_commits[name] = self.commits_json[name][0]["sha"]
+                            tmp.append(name)
+                    else:
+                        break
+                else:
+                    self.request_fail = True
         self.repos_list = tmp
 
     def load_flc(self):
