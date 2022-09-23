@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1500"
+   height="500"
+   viewBox="0 0 1500 500"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="inkscape_drawing.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   font-family="sans-serif"
+   inkscape:export-filename="template.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="930.55252"
+     inkscape:cy="321.02648"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs id="defs2">
+    <rect x="80" y="250" width="1254.7451" height="620.0589" id="rect1228" />
+    <rect x="80" y="80" width="776" height="116" id="rect1062" />
+    <rect x="80" y="80" width="1319.058" height="130.14214" id="rect1062-6" />
+    <rect x="80" y="250" width="779.5694" height="444.69638" id="rect1228-1" />
+    <rect x="80" y="250" width="785.22626" height="458.83853" id="rect1228-1-9" />
+    <rect x="80" y="250" width="532.11475" height="91.189731" id="rect1228-1-7" />
+  </defs>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
+    <rect style="fill:#b3b3b3;stroke-width:0.500066" id="rect980" width="1500" height="500" x="0" y="0" />
+    <rect style="fill:#222730;stroke-width:0.500066" id="rect922" width="1494" height="494" x="3" y="3" />
+    <text
+       xml:space="preserve"
+       id="text1060-1"
+       style="font-size:120px;line-height:1;white-space:pre;shape-inside:url(#rect1062);display:inline;fill:#cccccc"
+       transform="matrix(0.50006611,0,0,0.50006611,-7.6963301,-2.3234122)">
+       <tspan x="80" y="174.47964" id="tspan3743">GitHub Stats</tspan>
+    </text>
+    <text
+       xml:space="preserve"
+       id="text1060-2"
+       style="font-size:120px;line-height:1;white-space:pre;shape-inside:url(#rect1062-6);display:inline;fill:#cccccc"
+       transform="matrix(0.50006611,0,0,0.50006611,619.57659,-1.7762953)">
+       <tspan x="80" y="174.47964" id="tspan3745">Most Used Languages</tspan>
+    </text>
+    <text
+       xml:space="preserve"
+       id="text1226-1"
+       style="font-size:80px;line-height:1.1;white-space:pre;shape-inside:url(#rect1228);display:inline;fill:#cccccc"
+       transform="matrix(0.50006611,0,0,0.50006611,1.0001322,-10.001322)">
+       <tspan x="80" y="316.98643" id="tspan3747" >Total Commits :  &lt;tc&gt;</tspan>
+       <tspan x="80" y="404.98643" id="tspan3749" >Total Issues :  &lt;ti&gt;</tspan>
+       <tspan x="80" y="492.98643" id="tspan3751" >Total Repos :  &lt;tr&gt;</tspan>
+       <tspan x="80" y="580.98643" id="tspan3753" >Total Forks Repos :  &lt;tfr&gt;</tspan>
+       <tspan x="80" y="668.98643" id="tspan3755" >Total Stars Earned :  &lt;tse&gt;</tspan>
+       <tspan x="80" y="756.98643" id="tspan3757" >Total Forks Earned :  &lt;rfe&gt;</tspan>
+       <tspan x="80" y="844.98643" id="tspan3759" >Pull Requrest :  &lt;o&gt; / &lt;m&gt; / &lt;c&gt;</tspan>
+    </text>
+    <text
+       xml:space="preserve"
+       id="text1226-2"
+       style="font-size:70px;line-height:1.2;white-space:pre;shape-inside:url(#rect1228-1);display:inline;fill:#cccccc"
+       transform="matrix(0.50006611,0,0,0.50006611,661.59932,80.072654)">
+       <tspan x="80" y="311.40419" id="tspan3761" >&lt;lang_1&gt;  &lt;tp1&gt;%</tspan>
+       <tspan x="80" y="392.07082" id="tspan3763" >&lt;lang_2&gt;  &lt;tp2&gt;%</tspan>
+       <tspan x="80" y="472.73745" id="tspan3765" >&lt;lang_3&gt;  &lt;tp3&gt;%</tspan>
+       <tspan x="80" y="553.40407" id="tspan3767" >&lt;lang_4&gt;  &lt;tp4&gt;%</tspan>
+       <tspan x="80" y="634.0707" id="tspan3769" >&lt;lang_5&gt;  &lt;tp5&gt;%</tspan>
+    </text>
+    <text
+       xml:space="preserve"
+       id="text1226-3"
+       style="font-size:70px;line-height:1.2;white-space:pre;shape-inside:url(#rect1228-1-9);display:inline;fill:#cccccc"
+       transform="matrix(0.50006611,0,0,0.50006611,1054.1056,80.781552)">
+       <tspan x="80" y="311.40419" id="tspan3771" >&lt;lang_6&gt;  &lt;tp6&gt;%</tspan>
+       <tspan x="80" y="392.07082" id="tspan3773" >&lt;lang_7&gt;  &lt;tp7&gt;%</tspan>
+       <tspan x="80" y="472.73745" id="tspan3775" >&lt;lang_8&gt;  &lt;tp8&gt;%</tspan>
+       <tspan x="80" y="553.40407" id="tspan3777" >&lt;lang_9&gt;  &lt;tp9&gt;%</tspan>
+       <tspan x="80" y="634.0707" id="tspan3779" >&lt;lang_10&gt;  &lt;tp10&gt;%</tspan>
+    </text>
+    <text
+       xml:space="preserve"
+       id="text1226-4"
+       style="font-size:70px;line-height:1.1;white-space:pre;shape-inside:url(#rect1228-1-7);display:inline;fill:#cccccc"
+       transform="matrix(0.50006611,0,0,0.50006611,911.70194,288.53832)">
+       <tspan x="80" y="311.40419" id="tspan3781" >other  &lt;tpo&gt;%</tspan>
+    </text>
+    <text
+       xml:space="preserve"
+       style="font-size:26.6702px;line-height:0px;fill:#cccccc;stroke-width:0.500066"
+       x="305.89774"
+       y="440.4949"
+       id="text1798">
+       <tspan sodipodi:role="line" id="tspan1796" x="260.89774" y="440.4949" style="stroke-width:0.500066">(Open / Merged / Closed)</tspan>
+    </text>
+    <rect style="fill:#cccccc;stroke-width:0.500066" id="rect2081-11" width="750.09918" height="40.005287" x="680.22748" y="127.19685" />
+    <rect style="fill:#000000;stroke-width:0.500066" id="rect2081-1" width="750.09918" height="40.005287" x="680.22748" y="127.19685" />
+    <rect style="fill:#000000;stroke-width:0.500066" id="rect2081-2" width="750.09918" height="40.005287" x="680.22748" y="127.19685" />
+    <rect style="fill:#000000;stroke-width:0.500066" id="rect2081-3" width="750.09918" height="40.005287" x="680.22748" y="127.19685" />
+    <rect style="fill:#000000;stroke-width:0.500066" id="rect2081-4" width="750.09918" height="40.005287" x="680.22748" y="127.19685" />
+    <rect style="fill:#000000;stroke-width:0.500066" id="rect2081-5" width="750.09918" height="40.005287" x="680.22748" y="127.19685" />
+    <rect style="fill:#000000;stroke-width:0.500066" id="rect2081-6" width="750.09918" height="40.005287" x="680.22748" y="127.19685" />
+    <rect style="fill:#000000;stroke-width:0.500066" id="rect2081-7" width="750.09918" height="40.005287" x="680.22748" y="127.19685" />
+    <rect style="fill:#000000;stroke-width:0.500066" id="rect2081-8" width="750.09918" height="40.005287" x="680.22748" y="127.19685" />
+    <rect style="fill:#000000;stroke-width:0.500066" id="rect2081-9" width="750.09918" height="40.005287" x="680.22748" y="127.19685" />
+    <rect style="fill:#000000;stroke-width:0.500066" id="rect2081-10" width="750.09918" height="40.005287" x="680.22748" y="127.19685" />
+    <circle style="fill:#cccccc;stroke-width:0.500066" id="path2468-11" r="15.001984" cy="433.47726" cx="927.01703" />
+    <circle style="fill:#000000;stroke-width:0.500066" id="path2468-10" r="15.001984" cy="222.79048" cx="677.59034" />
+    <circle style="fill:#000000;stroke-width:0.500066" id="path2468-9" r="15.001984" cy="263.53644" cx="677.59088" />
+    <circle style="fill:#000000;stroke-width:0.500066" id="path2468-8" r="15.001984" cy="305.04193" cx="677.59082" />
+    <circle style="fill:#000000;stroke-width:0.500066" id="path2468-7" r="15.001984" cy="344.04706" cx="677.59082" />
+    <circle style="fill:#000000;stroke-width:0.500066" id="path2468-6" r="15.001984" cy="385.05252" cx="677.54088" />
+    <circle style="fill:#000000;stroke-width:0.500066" id="path2468-5" r="15.001984" cy="223.4977" cx="1068.8341" />
+    <circle style="fill:#000000;stroke-width:0.500066" id="path2468-4" r="15.001984" cy="265.22253" cx="1069.1877" />
+    <circle style="fill:#000000;stroke-width:0.500066" id="path2468-3" r="15.001984" cy="305.17932" cx="1069.5413" />
+    <circle style="fill:#000000;stroke-width:0.500066" id="path2468-2" r="15.001984" cy="345.13617" cx="1069.8949" />
+    <circle style="fill:#000000;stroke-width:0.500066" id="path2468-1" r="15.001984" cy="386.15375" cx="1069.5413" />
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+{
+    "total_stars_earned": ["tspan3755", "&lt;tse&gt;"],
+    "total_commits": ["tspan3747", "&lt;tc&gt;"],
+    "total_issues": ["tspan3749", "&lt;ti&gt;"],
+    "total_forks_earned": ["tspan3757", "&lt;rfe&gt;"],
+    "total_repos": ["tspan3751", "&lt;tr&gt;"],
+    "total_forks_repos": ["tspan3753", "&lt;tfr&gt;"],
+    "pull_request": ["tspan3759", "&lt;o&gt;", "&lt;m&gt;", "&lt;c&gt;"],
+    "lang_1": ["tspan3761", "&lt;lang_1&gt;", "&lt;tp1&gt;", "path2468-10", "rect2081-10"],
+    "lang_2": ["tspan3763", "&lt;lang_2&gt;", "&lt;tp2&gt;", "path2468-9", "rect2081-9"],
+    "lang_3": ["tspan3765", "&lt;lang_3&gt;", "&lt;tp3&gt;", "path2468-8", "rect2081-8"],
+    "lang_4": ["tspan3767", "&lt;lang_4&gt;", "&lt;tp4&gt;", "path2468-7", "rect2081-7"],
+    "lang_5": ["tspan3769", "&lt;lang_5&gt;", "&lt;tp5&gt;", "path2468-6", "rect2081-6"],
+    "lang_6": ["tspan3771", "&lt;lang_6&gt;", "&lt;tp6&gt;", "path2468-5", "rect2081-5"],
+    "lang_7": ["tspan3773", "&lt;lang_7&gt;", "&lt;tp7&gt;", "path2468-4", "rect2081-4"],
+    "lang_8": ["tspan3775", "&lt;lang_8&gt;", "&lt;tp8&gt;", "path2468-3", "rect2081-3"],
+    "lang_9": ["tspan3777", "&lt;lang_9&gt;", "&lt;tp9&gt;", "path2468-2", "rect2081-2"],
+    "lang_10": ["tspan3779", "&lt;lang_10&gt;", "&lt;tp10&gt;", "path2468-1", "rect2081-1"],
+    "lang_other": ["tspan3781", "&lt;tpo&gt;", "path2468-11", "rect2081-11"],
+    "line_width_max": "750.09918",
+    "dark2light": [
+        ["#222730", "#ffffff"],
+        ["#b3b3b3", "#7f7f7f"],
+        ["#cccccc", "#242930"]
+    ]
+}

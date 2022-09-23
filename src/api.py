@@ -48,14 +48,14 @@ class init:
             self.request_fail = False
             self.repos_json = res.json()
             self.repos = len(self.repos_json)
-            self.fork_repos = 0
+            self.forks_repos = 0
             self.stars = 0
             self.forks = 0
             self.issues = 0
             self.repos_list = []
             for i in range(self.repos):
                 if self.repos_json[i]["fork"]:
-                    self.fork_repos += 1
+                    self.forks_repos += 1
                 if self.repos_json[i]["name"] != self.user:
                     self.repos_list.append(self.repos_json[i]["name"])
                 self.stars += self.repos_json[i]["stargazers_count"]

@@ -22,8 +22,8 @@ def load():
             "total_issues": 0,
             "total_forks_earned": 0,
             "total_repos": 0,
-            "total_fork_repos": 0,
-            "pull_requrest": {
+            "total_forks_repos": 0,
+            "pull_request": {
                 "open": 0,
                 "merged": 0,
                 "closed": 0

@@ -73,11 +73,11 @@ if __name__ == "__main__":
         API.get_total_commits()
         stats_old = stats.load()
         is_update = len(update) > 0
-        is_update = (API.prs["open"] != stats_old["pull_requrest"]["open"]) or is_update
-        is_update = (API.prs["merged"] != stats_old["pull_requrest"]["merged"]) or is_update
-        is_update = (API.prs["closed"] != stats_old["pull_requrest"]["closed"]) or is_update
+        is_update = (API.prs["open"] != stats_old["pull_request"]["open"]) or is_update
+        is_update = (API.prs["merged"] != stats_old["pull_request"]["merged"]) or is_update
+        is_update = (API.prs["closed"] != stats_old["pull_request"]["closed"]) or is_update
         is_update = (API.repos != stats_old["total_repos"]) or is_update
-        is_update = (API.fork_repos != stats_old["total_fork_repos"]) or is_update
+        is_update = (API.forks_repos != stats_old["total_forks_repos"]) or is_update
         is_update = (API.stars != stats_old["total_stars_earned"]) or is_update
         is_update = (API.forks != stats_old["total_forks_earned"]) or is_update
         is_update = (API.issues != stats_old["total_issues"]) or is_update
@@ -92,8 +92,8 @@ if __name__ == "__main__":
                 "total_issues": API.issues,
                 "total_forks_earned": API.forks,
                 "total_repos": API.repos,
-                "total_fork_repos": API.fork_repos,
-                "pull_requrest": {
+                "total_forks_repos": API.forks_repos,
+                "pull_request": {
                     "open": API.prs["open"],
                     "merged": API.prs["merged"],
                     "closed": API.prs["closed"]
@@ -102,6 +102,16 @@ if __name__ == "__main__":
             print(f"push stats.json to {API.user}/{API.user} /{config['stats']}")
             stats.save(tmp)
             shutil.copyfile("tmp/stats", f"tmp/repos/{API.user}/{config['stats']}")
+            card_template = open("template.svg", "r", encoding="utf-8").read()
+            template_config = json.loads(open("template.json", "r", encoding="utf-8").read())
+            dark_svg_card = card_template
+            light_svg_card = card_template
+            for r in template_config["dark2light"]:
+                light_svg_card = light_svg_card.replace(r[0], r[1])
+            open("tmp/stats_dark.svg", "w", encoding="utf-8").write(svg_card.generate(tmp, dark_svg_card, template_config))
+            open("tmp/stats_light.svg", "w", encoding="utf-8").write(svg_card.generate(tmp, light_svg_card, template_config))
+            shutil.copyfile("tmp/stats_dark.svg", f"tmp/repos/{API.user}/{config['svg']['dark']}")
+            shutil.copyfile("tmp/stats_light.svg", f"tmp/repos/{API.user}/{config['svg']['light']}")
             GIT.push()
         else:
             print("no update !")
