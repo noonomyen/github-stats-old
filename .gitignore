@@ -2,4 +2,5 @@ src/venv
 src/__pycache__
 src/tmp
 src/config.test.json
+src/config.json
 README.md.backup
