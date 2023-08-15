@@ -47,13 +47,12 @@ python github-stats.py --config config.json
 
 ```
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/noonomyen/noonomyen/main/github-stats/dark.svg">
-    <img src="https://raw.githubusercontent.com/noonomyen/noonomyen/main/github-stats/light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats.noonomyen.com/noonomyen/dark.svg">
+    <img src="https://github-stats.noonomyen.com/noonomyen/light.svg">
 </picture>
 ```
 
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/noonomyen/noonomyen/main/github-stats/dark.svg">
-    <img src="https://raw.githubusercontent.com/noonomyen/noonomyen/main/github-stats/light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats.noonomyen.com/noonomyen/dark.svg">
+    <img src="https://github-stats.noonomyen.com/noonomyen/light.svg">
 </picture>
-
