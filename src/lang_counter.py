@@ -9,11 +9,14 @@ def get(repo_name, GIT, lang, lang_stats, uid, sha_commits):
     gl = json.loads(str(run(["github-linguist", "--breakdown", "--json"], capture_output=True).stdout.decode("utf-8")))
     for l in gl:
         if not l in lang_stats:
+            color = None
+            if l in lang and "color" in lang[l]:
+                color = lang[l]["color"]
             lang_stats[l] = {
                 "size": 0,
                 "full_size": 0,
                 "percent": 0,
-                "color": lang[l]["color"]
+                "color": color
             }
         for file in gl[l]["files"]:
             _ = GIT.get_size_by_author(file, uid, sha_commits)

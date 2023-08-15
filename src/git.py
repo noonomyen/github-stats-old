@@ -10,7 +10,7 @@ class init:
         self.token = token
         self.name = name
         self.email = email
-        self.url = f"https://{self.token}@github.com/{self.user}/{self.user}.git"
+        self.url = f"https://{self.user}:{self.token}@github.com/{self.user}/{self.user}.git"
         self.dir = f"tmp/repos/{user}"
         self.working_dir = getcwd()
         self.file_list = []
@@ -46,31 +46,32 @@ class init:
         chdir(self.working_dir)
 
     def get_size_by_author(self, file, uid, sha_commits):
-        output = run(["git", "blame", file], capture_output=True).stdout.decode("utf-8").split("\n")[:-1]
-        size = 0
-        file_size = 0
-        for line in output:
-            counting = False
-            line = line.split(" ")
-            if line[0][0] == "^":
-                sha = line[0][1:]
-            else:
-                sha = line[0]
-            len_sha = len(sha)
-            is_author = False
-            for _ in sha_commits:
-                if _[:len_sha] == sha:
-                    is_author = True
-                    break
-            for _ in line:
-                if counting:
-                    len_ = len(_) + 1
-                    file_size += len_
-                    if is_author:
-                        size += len_
-                elif counting == False and len(_) != 0 and _[-1] == ")":
-                    counting = True
-        return size, file_size
+        # output = run(["git", "blame", file], capture_output=True).stdout.decode("utf-8").split("\n")[:-1]
+        size = len(open(file, "r", encoding="utf-8").read())
+        return size, size
+        # file_size = 0
+        # for line in output:
+        #     counting = False
+        #     line = line.split(" ")
+        #     if line[0][0] == "^":
+        #         sha = line[0][1:]
+        #     else:
+        #         sha = line[0]
+        #     len_sha = len(sha)
+        #     is_author = False
+        #     for _ in sha_commits:
+        #         if _[:len_sha] == sha:
+        #             is_author = True
+        #             break
+        #     for _ in line:
+        #         if counting:
+        #             len_ = len(_) + 1
+        #             file_size += len_
+        #             if is_author:
+        #                 size += len_
+        #         elif counting == False and len(_) != 0 and _[-1] == ")":
+        #             counting = True
+        # return size, file_size
 
     def get_repos_by_list(self, repos_list):
         chdir("tmp/repos")
@@ -90,7 +91,7 @@ class init:
                 tmp[2].append(local_repos)
                 rmtree(local_repos)
         for name in tmp[0]:
-            system(f"git clone https://github.com/{self.user}/{name}")
+            system(f"git clone https://{self.user}:{self.token}@github.com/{self.user}/{name}")
         chdir(self.working_dir)
         return tmp
 

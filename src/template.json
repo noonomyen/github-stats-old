@@ -22,5 +22,6 @@
         ["#222730", "#ffffff"],
         ["#b3b3b3", "#7f7f7f"],
         ["#cccccc", "#242930"]
-    ]
+    ],
+    "unknown_lang_color": "#cccccc"
 }

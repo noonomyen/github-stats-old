@@ -43,24 +43,26 @@ class init:
             self.request_fail = True
 
     def get_repos(self):
-        res = get(f"https://api.github.com/users/{self.user}/repos", headers=self.headers)
+        # res = get(f"https://api.github.com/users/{self.user}/repos", headers=self.headers)
+        res = get(f"https://api.github.com/search/repositories?q=user:{self.user}", headers=self.headers)
         if res.status_code == 200:
             self.request_fail = False
             self.repos_json = res.json()
-            self.repos = len(self.repos_json)
+            self.repos = self.repos_json['total_count']
             self.forks_repos = 0
             self.stars = 0
             self.forks = 0
             self.issues = 0
             self.repos_list = []
             for i in range(self.repos):
-                if self.repos_json[i]["fork"]:
+                if self.repos_json['items'][i]["fork"]:
                     self.forks_repos += 1
-                if self.repos_json[i]["name"] != self.user:
-                    self.repos_list.append(self.repos_json[i]["name"])
-                self.stars += self.repos_json[i]["stargazers_count"]
-                self.forks += self.repos_json[i]["forks"]
-                self.issues += self.repos_json[i]["open_issues"]
+                    return
+                if self.repos_json['items'][i]["name"] != self.user:
+                    self.repos_list.append(self.repos_json['items'][i]["name"])
+                self.stars += self.repos_json['items'][i]["stargazers_count"]
+                self.forks += self.repos_json['items'][i]["forks"]
+                self.issues += self.repos_json['items'][i]["open_issues"]
         else:
             self.request_fail = True
 

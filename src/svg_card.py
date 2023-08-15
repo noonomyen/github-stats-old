@@ -67,12 +67,12 @@ def generate(stats, template, config):
                         break
                     elif f == f"id=\"{config['lang_' + str(l)][3]}\"":
                         if lang[l - 1] != None:
-                            tmp += line.replace("#000000", stats["lang_stats"][lang[l - 1][0]]["color"]) + "\n"
+                            tmp += line.replace("#000000", stats["lang_stats"][lang[l - 1][0]]["color"] or config["unknown_lang_color"]) + "\n"
                         add_line = False
                         break
                     elif f == f"id=\"{config['lang_' + str(l)][4]}\"":
                         if lang[l - 1] != None:
-                            tmp1 = line.replace("#000000", stats["lang_stats"][lang[l - 1][0]]["color"])
+                            tmp1 = line.replace("#000000", stats["lang_stats"][lang[l - 1][0]]["color"] or config["unknown_lang_color"])
                             tmp2 = 0
                             for i in range(l):
                                 tmp2 += lang[i][2]
